@@ -19,14 +19,17 @@ func Hex(rgba uint32) color.RGBA {
 	}
 }
 
-// Uniform is short for image.NewUniform(Hex(rgba))
-func Uniform(rgba uint32) *image.Uniform {
-	return image.NewUniform(Hex(rgba))
+func Plan9(c color.Color) color.Color {
+	return c
+	//	return palette.Plan9[color.Palette(palette.Plan9).Index(c)]
 }
 
+// Uniform is short for image.NewUniform(Hex(rgba))
+func Uniform(rgba uint32) *image.Uniform {
+	return image.NewUniform(Plan9(Hex(rgba)))
+}
 
 // Uint32 converts a color.RGBA to a uint32
 func Uint32(c color.RGBA) uint32 {
 	return uint32(c.R)<<24 | uint32(c.G)<<16 | uint32(c.B)<<8 | uint32(c.A)
 }
-
