@@ -12,10 +12,10 @@ var (
 	LightGray = Uniform(0xb0b0c0ff)
 	DarkGray  = Uniform(0x120a14ff)
 	
-	Yellow    = Uniform(0xfffffdff)
-	Red       = Uniform(0xffe8efff)
-	Green     = Uniform(0xefffe8ff)
-	Blue      = Uniform(0xe8efffff)
+	Yellow    = Uniform(0xfffffd0f)
+	Red       = Uniform(0xffd0d8ff)
+	Green     = Uniform(0xd8ffd0ff)
+	Blue      = Uniform(0xd8d0ffff)
 	
 	Mauve     = Uniform(0x9090C0ff)
 	Peach     = Uniform(0xfff8e8ff)
